@@ -1,0 +1,6 @@
+StrategyID,StrategyName,Style,Timeframe,Description
+1,Opening Range Breakout,Breakout,5m,Trades the break of the first 15-minute range after the NY open.
+2,VWAP Reversion,Mean Reversion,1m,Fades stretched moves back toward session VWAP during midday.
+3,Trend Pullback,Trend Following,15m,Enters pullbacks to the 20 EMA in the direction of the daily trend.
+4,London Breakout,Breakout,5m,Trades the London session break of the Asia range in metals and energy.
+5,News Fade,Event-Driven,1m,Fades the first spike after high-impact 8:30 ET releases.

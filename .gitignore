@@ -1,0 +1,14 @@
+# Python environment
+.venv/
+__pycache__/
+*.pyc
+
+# Built database (rebuild with generate_data.py)
+*.duckdb
+*.duckdb.wal
+
+# Duplicate of data/
+tradeops_data_csv.zip
+
+# Office temp files
+~$*

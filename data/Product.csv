@@ -1,0 +1,13 @@
+RootSymbol,ProductName,ExchangeCode,AssetClass,TickSize,TickValue,IsMicro
+ES,E-mini S&P 500,CME,Equity Index,0.25,12.5,False
+MES,Micro E-mini S&P 500,CME,Equity Index,0.25,1.25,True
+NQ,E-mini Nasdaq-100,CME,Equity Index,0.25,5.0,False
+MNQ,Micro E-mini Nasdaq-100,CME,Equity Index,0.25,0.5,True
+YM,E-mini Dow,CBOT,Equity Index,1.0,5.0,False
+MYM,Micro E-mini Dow,CBOT,Equity Index,1.0,0.5,True
+RTY,E-mini Russell 2000,CME,Equity Index,0.1,5.0,False
+M2K,Micro E-mini Russell 2000,CME,Equity Index,0.1,0.5,True
+CL,Crude Oil,NYMEX,Energy,0.01,10.0,False
+MCL,Micro Crude Oil,NYMEX,Energy,0.01,1.0,True
+GC,Gold,COMEX,Metals,0.1,10.0,False
+MGC,Micro Gold,COMEX,Metals,0.1,1.0,True

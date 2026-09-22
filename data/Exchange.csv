@@ -1,0 +1,5 @@
+ExchangeCode,ExchangeName,TimeZone
+CME,Chicago Mercantile Exchange,America/Chicago
+CBOT,Chicago Board of Trade,America/Chicago
+NYMEX,New York Mercantile Exchange,America/Chicago
+COMEX,Commodity Exchange Inc.,America/Chicago

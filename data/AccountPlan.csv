@@ -1,0 +1,9 @@
+PlanID,FirmID,PlanName,PlanType,StartingBalance,ProfitTarget,MaxTrailingDrawdown,DailyLossLimit,ConsistencyRulePct,MinTradingDays,MaxContracts,ProfitSplitPct,PlanFee
+1,1,50K Combine,Evaluation,50000,3000,2000,1000,50,2,5,,49
+2,1,50K Funded,Funded,50000,,2000,1000,,,5,90.0,149
+3,1,150K Combine,Evaluation,150000,9000,4500,3000,50,2,15,,149
+4,1,150K Funded,Funded,150000,,4500,3000,,,15,90.0,149
+5,2,LucidFlex 50K Eval,Evaluation,50000,3000,2000,,50,1,4,,80
+6,2,LucidFlex 50K Funded,Funded,50000,,2000,,40,,4,90.0,0
+7,3,Rapid 50K Eval,Evaluation,50000,3000,2000,,,1,5,,77
+8,3,Rapid 50K Funded,Funded,50000,,2000,,40,,5,90.0,129

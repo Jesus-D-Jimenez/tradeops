@@ -1,0 +1,246 @@
+EventID,EventDate,EventTimeET,EventName,Impact
+1,2025-01-01,10:30:00,EIA Crude Inventories,Medium
+2,2025-01-02,08:30:00,Initial Jobless Claims,Low
+3,2025-01-03,08:30:00,Nonfarm Payrolls,High
+4,2025-01-08,10:30:00,EIA Crude Inventories,Medium
+5,2025-01-09,08:30:00,Initial Jobless Claims,Low
+6,2025-01-14,08:30:00,CPI,High
+7,2025-01-15,08:30:00,Retail Sales,Medium
+8,2025-01-15,10:30:00,EIA Crude Inventories,Medium
+9,2025-01-15,14:00:00,FOMC Rate Decision,High
+10,2025-01-16,08:30:00,Initial Jobless Claims,Low
+11,2025-01-22,10:30:00,EIA Crude Inventories,Medium
+12,2025-01-23,08:30:00,Initial Jobless Claims,Low
+13,2025-01-29,10:30:00,EIA Crude Inventories,Medium
+14,2025-01-30,08:30:00,Initial Jobless Claims,Low
+15,2025-02-05,10:30:00,EIA Crude Inventories,Medium
+16,2025-02-06,08:30:00,Initial Jobless Claims,Low
+17,2025-02-07,08:30:00,Nonfarm Payrolls,High
+18,2025-02-11,08:30:00,CPI,High
+19,2025-02-12,10:30:00,EIA Crude Inventories,Medium
+20,2025-02-13,08:30:00,Initial Jobless Claims,Low
+21,2025-02-17,08:30:00,Retail Sales,Medium
+22,2025-02-19,10:30:00,EIA Crude Inventories,Medium
+23,2025-02-20,08:30:00,Initial Jobless Claims,Low
+24,2025-02-26,10:30:00,EIA Crude Inventories,Medium
+25,2025-02-27,08:30:00,Initial Jobless Claims,Low
+26,2025-03-05,10:30:00,EIA Crude Inventories,Medium
+27,2025-03-06,08:30:00,Initial Jobless Claims,Low
+28,2025-03-07,08:30:00,Nonfarm Payrolls,High
+29,2025-03-11,08:30:00,CPI,High
+30,2025-03-12,10:30:00,EIA Crude Inventories,Medium
+31,2025-03-13,08:30:00,Initial Jobless Claims,Low
+32,2025-03-17,08:30:00,Retail Sales,Medium
+33,2025-03-19,10:30:00,EIA Crude Inventories,Medium
+34,2025-03-19,14:00:00,FOMC Rate Decision,High
+35,2025-03-20,08:30:00,Initial Jobless Claims,Low
+36,2025-03-26,10:30:00,EIA Crude Inventories,Medium
+37,2025-03-27,08:30:00,Initial Jobless Claims,Low
+38,2025-04-02,10:30:00,EIA Crude Inventories,Medium
+39,2025-04-03,08:30:00,Initial Jobless Claims,Low
+40,2025-04-04,08:30:00,Nonfarm Payrolls,High
+41,2025-04-09,10:30:00,EIA Crude Inventories,Medium
+42,2025-04-10,08:30:00,Initial Jobless Claims,Low
+43,2025-04-15,08:30:00,Retail Sales,Medium
+44,2025-04-16,10:30:00,EIA Crude Inventories,Medium
+45,2025-04-17,08:30:00,Initial Jobless Claims,Low
+46,2025-04-23,10:30:00,EIA Crude Inventories,Medium
+47,2025-04-24,08:30:00,Initial Jobless Claims,Low
+48,2025-04-30,10:30:00,EIA Crude Inventories,Medium
+49,2025-05-01,08:30:00,Initial Jobless Claims,Low
+50,2025-05-02,08:30:00,Nonfarm Payrolls,High
+51,2025-05-07,10:30:00,EIA Crude Inventories,Medium
+52,2025-05-08,08:30:00,Initial Jobless Claims,Low
+53,2025-05-13,08:30:00,CPI,High
+54,2025-05-14,10:30:00,EIA Crude Inventories,Medium
+55,2025-05-15,08:30:00,Initial Jobless Claims,Low
+56,2025-05-15,08:30:00,Retail Sales,Medium
+57,2025-05-21,10:30:00,EIA Crude Inventories,Medium
+58,2025-05-21,14:00:00,FOMC Rate Decision,High
+59,2025-05-22,08:30:00,Initial Jobless Claims,Low
+60,2025-05-28,10:30:00,EIA Crude Inventories,Medium
+61,2025-05-29,08:30:00,Initial Jobless Claims,Low
+62,2025-06-04,10:30:00,EIA Crude Inventories,Medium
+63,2025-06-05,08:30:00,Initial Jobless Claims,Low
+64,2025-06-06,08:30:00,Nonfarm Payrolls,High
+65,2025-06-10,08:30:00,CPI,High
+66,2025-06-11,10:30:00,EIA Crude Inventories,Medium
+67,2025-06-12,08:30:00,Initial Jobless Claims,Low
+68,2025-06-16,08:30:00,Retail Sales,Medium
+69,2025-06-18,10:30:00,EIA Crude Inventories,Medium
+70,2025-06-18,14:00:00,FOMC Rate Decision,High
+71,2025-06-19,08:30:00,Initial Jobless Claims,Low
+72,2025-06-25,10:30:00,EIA Crude Inventories,Medium
+73,2025-06-26,08:30:00,Initial Jobless Claims,Low
+74,2025-07-02,10:30:00,EIA Crude Inventories,Medium
+75,2025-07-03,08:30:00,Initial Jobless Claims,Low
+76,2025-07-04,08:30:00,Nonfarm Payrolls,High
+77,2025-07-09,10:30:00,EIA Crude Inventories,Medium
+78,2025-07-10,08:30:00,Initial Jobless Claims,Low
+79,2025-07-15,08:30:00,Retail Sales,Medium
+80,2025-07-16,10:30:00,EIA Crude Inventories,Medium
+81,2025-07-16,14:00:00,FOMC Rate Decision,High
+82,2025-07-17,08:30:00,Initial Jobless Claims,Low
+83,2025-07-23,10:30:00,EIA Crude Inventories,Medium
+84,2025-07-24,08:30:00,Initial Jobless Claims,Low
+85,2025-07-30,10:30:00,EIA Crude Inventories,Medium
+86,2025-07-31,08:30:00,Initial Jobless Claims,Low
+87,2025-08-01,08:30:00,Nonfarm Payrolls,High
+88,2025-08-06,10:30:00,EIA Crude Inventories,Medium
+89,2025-08-07,08:30:00,Initial Jobless Claims,Low
+90,2025-08-12,08:30:00,CPI,High
+91,2025-08-13,10:30:00,EIA Crude Inventories,Medium
+92,2025-08-14,08:30:00,Initial Jobless Claims,Low
+93,2025-08-15,08:30:00,Retail Sales,Medium
+94,2025-08-20,10:30:00,EIA Crude Inventories,Medium
+95,2025-08-21,08:30:00,Initial Jobless Claims,Low
+96,2025-08-27,10:30:00,EIA Crude Inventories,Medium
+97,2025-08-28,08:30:00,Initial Jobless Claims,Low
+98,2025-09-03,10:30:00,EIA Crude Inventories,Medium
+99,2025-09-04,08:30:00,Initial Jobless Claims,Low
+100,2025-09-05,08:30:00,Nonfarm Payrolls,High
+101,2025-09-10,08:30:00,CPI,High
+102,2025-09-10,10:30:00,EIA Crude Inventories,Medium
+103,2025-09-11,08:30:00,Initial Jobless Claims,Low
+104,2025-09-15,08:30:00,Retail Sales,Medium
+105,2025-09-17,10:30:00,EIA Crude Inventories,Medium
+106,2025-09-17,14:00:00,FOMC Rate Decision,High
+107,2025-09-18,08:30:00,Initial Jobless Claims,Low
+108,2025-09-24,10:30:00,EIA Crude Inventories,Medium
+109,2025-09-25,08:30:00,Initial Jobless Claims,Low
+110,2025-10-01,10:30:00,EIA Crude Inventories,Medium
+111,2025-10-02,08:30:00,Initial Jobless Claims,Low
+112,2025-10-03,08:30:00,Nonfarm Payrolls,High
+113,2025-10-08,10:30:00,EIA Crude Inventories,Medium
+114,2025-10-09,08:30:00,Initial Jobless Claims,Low
+115,2025-10-14,08:30:00,CPI,High
+116,2025-10-15,08:30:00,Retail Sales,Medium
+117,2025-10-15,10:30:00,EIA Crude Inventories,Medium
+118,2025-10-15,14:00:00,FOMC Rate Decision,High
+119,2025-10-16,08:30:00,Initial Jobless Claims,Low
+120,2025-10-22,10:30:00,EIA Crude Inventories,Medium
+121,2025-10-23,08:30:00,Initial Jobless Claims,Low
+122,2025-10-29,10:30:00,EIA Crude Inventories,Medium
+123,2025-10-30,08:30:00,Initial Jobless Claims,Low
+124,2025-11-05,10:30:00,EIA Crude Inventories,Medium
+125,2025-11-06,08:30:00,Initial Jobless Claims,Low
+126,2025-11-07,08:30:00,Nonfarm Payrolls,High
+127,2025-11-11,08:30:00,CPI,High
+128,2025-11-12,10:30:00,EIA Crude Inventories,Medium
+129,2025-11-13,08:30:00,Initial Jobless Claims,Low
+130,2025-11-17,08:30:00,Retail Sales,Medium
+131,2025-11-19,10:30:00,EIA Crude Inventories,Medium
+132,2025-11-20,08:30:00,Initial Jobless Claims,Low
+133,2025-11-26,10:30:00,EIA Crude Inventories,Medium
+134,2025-11-27,08:30:00,Initial Jobless Claims,Low
+135,2025-12-03,10:30:00,EIA Crude Inventories,Medium
+136,2025-12-04,08:30:00,Initial Jobless Claims,Low
+137,2025-12-05,08:30:00,Nonfarm Payrolls,High
+138,2025-12-10,08:30:00,CPI,High
+139,2025-12-10,10:30:00,EIA Crude Inventories,Medium
+140,2025-12-11,08:30:00,Initial Jobless Claims,Low
+141,2025-12-15,08:30:00,Retail Sales,Medium
+142,2025-12-17,10:30:00,EIA Crude Inventories,Medium
+143,2025-12-17,14:00:00,FOMC Rate Decision,High
+144,2025-12-18,08:30:00,Initial Jobless Claims,Low
+145,2025-12-24,10:30:00,EIA Crude Inventories,Medium
+146,2025-12-25,08:30:00,Initial Jobless Claims,Low
+147,2025-12-31,10:30:00,EIA Crude Inventories,Medium
+148,2026-01-01,08:30:00,Initial Jobless Claims,Low
+149,2026-01-02,08:30:00,Nonfarm Payrolls,High
+150,2026-01-07,10:30:00,EIA Crude Inventories,Medium
+151,2026-01-08,08:30:00,Initial Jobless Claims,Low
+152,2026-01-13,08:30:00,CPI,High
+153,2026-01-14,10:30:00,EIA Crude Inventories,Medium
+154,2026-01-15,08:30:00,Initial Jobless Claims,Low
+155,2026-01-15,08:30:00,Retail Sales,Medium
+156,2026-01-21,10:30:00,EIA Crude Inventories,Medium
+157,2026-01-21,14:00:00,FOMC Rate Decision,High
+158,2026-01-22,08:30:00,Initial Jobless Claims,Low
+159,2026-01-28,10:30:00,EIA Crude Inventories,Medium
+160,2026-01-29,08:30:00,Initial Jobless Claims,Low
+161,2026-02-04,10:30:00,EIA Crude Inventories,Medium
+162,2026-02-05,08:30:00,Initial Jobless Claims,Low
+163,2026-02-06,08:30:00,Nonfarm Payrolls,High
+164,2026-02-10,08:30:00,CPI,High
+165,2026-02-11,10:30:00,EIA Crude Inventories,Medium
+166,2026-02-12,08:30:00,Initial Jobless Claims,Low
+167,2026-02-16,08:30:00,Retail Sales,Medium
+168,2026-02-18,10:30:00,EIA Crude Inventories,Medium
+169,2026-02-19,08:30:00,Initial Jobless Claims,Low
+170,2026-02-25,10:30:00,EIA Crude Inventories,Medium
+171,2026-02-26,08:30:00,Initial Jobless Claims,Low
+172,2026-03-04,10:30:00,EIA Crude Inventories,Medium
+173,2026-03-05,08:30:00,Initial Jobless Claims,Low
+174,2026-03-06,08:30:00,Nonfarm Payrolls,High
+175,2026-03-10,08:30:00,CPI,High
+176,2026-03-11,10:30:00,EIA Crude Inventories,Medium
+177,2026-03-12,08:30:00,Initial Jobless Claims,Low
+178,2026-03-16,08:30:00,Retail Sales,Medium
+179,2026-03-18,10:30:00,EIA Crude Inventories,Medium
+180,2026-03-18,14:00:00,FOMC Rate Decision,High
+181,2026-03-19,08:30:00,Initial Jobless Claims,Low
+182,2026-03-25,10:30:00,EIA Crude Inventories,Medium
+183,2026-03-26,08:30:00,Initial Jobless Claims,Low
+184,2026-04-01,10:30:00,EIA Crude Inventories,Medium
+185,2026-04-02,08:30:00,Initial Jobless Claims,Low
+186,2026-04-03,08:30:00,Nonfarm Payrolls,High
+187,2026-04-08,10:30:00,EIA Crude Inventories,Medium
+188,2026-04-09,08:30:00,Initial Jobless Claims,Low
+189,2026-04-14,08:30:00,CPI,High
+190,2026-04-15,08:30:00,Retail Sales,Medium
+191,2026-04-15,10:30:00,EIA Crude Inventories,Medium
+192,2026-04-16,08:30:00,Initial Jobless Claims,Low
+193,2026-04-22,10:30:00,EIA Crude Inventories,Medium
+194,2026-04-23,08:30:00,Initial Jobless Claims,Low
+195,2026-04-29,10:30:00,EIA Crude Inventories,Medium
+196,2026-04-30,08:30:00,Initial Jobless Claims,Low
+197,2026-05-01,08:30:00,Nonfarm Payrolls,High
+198,2026-05-06,10:30:00,EIA Crude Inventories,Medium
+199,2026-05-07,08:30:00,Initial Jobless Claims,Low
+200,2026-05-12,08:30:00,CPI,High
+201,2026-05-13,10:30:00,EIA Crude Inventories,Medium
+202,2026-05-14,08:30:00,Initial Jobless Claims,Low
+203,2026-05-15,08:30:00,Retail Sales,Medium
+204,2026-05-20,10:30:00,EIA Crude Inventories,Medium
+205,2026-05-20,14:00:00,FOMC Rate Decision,High
+206,2026-05-21,08:30:00,Initial Jobless Claims,Low
+207,2026-05-27,10:30:00,EIA Crude Inventories,Medium
+208,2026-05-28,08:30:00,Initial Jobless Claims,Low
+209,2026-06-03,10:30:00,EIA Crude Inventories,Medium
+210,2026-06-04,08:30:00,Initial Jobless Claims,Low
+211,2026-06-05,08:30:00,Nonfarm Payrolls,High
+212,2026-06-10,08:30:00,CPI,High
+213,2026-06-10,10:30:00,EIA Crude Inventories,Medium
+214,2026-06-11,08:30:00,Initial Jobless Claims,Low
+215,2026-06-15,08:30:00,Retail Sales,Medium
+216,2026-06-17,10:30:00,EIA Crude Inventories,Medium
+217,2026-06-17,14:00:00,FOMC Rate Decision,High
+218,2026-06-18,08:30:00,Initial Jobless Claims,Low
+219,2026-06-24,10:30:00,EIA Crude Inventories,Medium
+220,2026-06-25,08:30:00,Initial Jobless Claims,Low
+221,2026-07-01,10:30:00,EIA Crude Inventories,Medium
+222,2026-07-02,08:30:00,Initial Jobless Claims,Low
+223,2026-07-03,08:30:00,Nonfarm Payrolls,High
+224,2026-07-08,10:30:00,EIA Crude Inventories,Medium
+225,2026-07-09,08:30:00,Initial Jobless Claims,Low
+226,2026-07-14,08:30:00,CPI,High
+227,2026-07-15,08:30:00,Retail Sales,Medium
+228,2026-07-15,10:30:00,EIA Crude Inventories,Medium
+229,2026-07-15,14:00:00,FOMC Rate Decision,High
+230,2026-07-16,08:30:00,Initial Jobless Claims,Low
+231,2026-07-22,10:30:00,EIA Crude Inventories,Medium
+232,2026-07-23,08:30:00,Initial Jobless Claims,Low
+233,2026-07-29,10:30:00,EIA Crude Inventories,Medium
+234,2026-07-30,08:30:00,Initial Jobless Claims,Low
+235,2026-08-05,10:30:00,EIA Crude Inventories,Medium
+236,2026-08-06,08:30:00,Initial Jobless Claims,Low
+237,2026-08-07,08:30:00,Nonfarm Payrolls,High
+238,2026-08-11,08:30:00,CPI,High
+239,2026-08-12,10:30:00,EIA Crude Inventories,Medium
+240,2026-08-13,08:30:00,Initial Jobless Claims,Low
+241,2026-08-17,08:30:00,Retail Sales,Medium
+242,2026-08-19,10:30:00,EIA Crude Inventories,Medium
+243,2026-08-20,08:30:00,Initial Jobless Claims,Low
+244,2026-08-26,10:30:00,EIA Crude Inventories,Medium
+245,2026-08-27,08:30:00,Initial Jobless Claims,Low
