@@ -1,0 +1,421 @@
+<mxfile host="Electron" type="device"><diagram id="eer" name="EER Diagram">
+    <mxGraphModel dx="2074" dy="1196" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1150" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eer-eer-t1" value="TradeOps – Extended Entity-Relationship Diagram (crow&#39;s foot notation)" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=18;fontStyle=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="45" y="25" width="900" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-PropFirm" value="PropFirm" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="45" y="87" width="270" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-2" value="FirmID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-PropFirm" vertex="1">
+          <mxGeometry y="28" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-3" value="FirmName" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-PropFirm" vertex="1">
+          <mxGeometry y="50" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-4" value="Website" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-PropFirm" vertex="1">
+          <mxGeometry y="72" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-5" value="PayoutCycleDays" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-PropFirm" vertex="1">
+          <mxGeometry y="94" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-AccountPlan" value="AccountPlan" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="45" y="304" width="270" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-6" value="PlanID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="28" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-7" value="PlanName" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="50" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-8" value="PlanType {Evaluation | Funded}" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="72" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-9" value="StartingBalance" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="94" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-10" value="MaxTrailingDrawdown" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="116" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-11" value="DailyLossLimit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="138" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-12" value="ConsistencyRulePct" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="160" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-13" value="MaxContracts" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="182" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-14" value="PlanFee" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountPlan" vertex="1">
+          <mxGeometry y="204" width="270" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-EvalPlan" value="EvaluationPlan" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="23" y="694" width="162" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-15" value="ProfitTarget" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-EvalPlan" vertex="1">
+          <mxGeometry y="28" width="162" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-16" value="MinTradingDays" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-EvalPlan" vertex="1">
+          <mxGeometry y="50" width="162" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-FundedPlan" value="FundedPlan" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="207" y="694" width="152" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-17" value="ProfitSplitPct" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-FundedPlan" vertex="1">
+          <mxGeometry y="28" width="152" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-spec" value="d" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontStyle=1;fontSize=14;strokeColor=#000000;fillColor=#FFFFFF;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="164" y="607" width="32" height="32" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-18" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;startArrow=none;strokeColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;strokeWidth=3;" parent="1" source="eer-AccountPlan" target="eer-spec" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-19" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;startArrow=none;strokeColor=#000000;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" parent="1" source="eer-spec" target="eer-EvalPlan" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-20" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;startArrow=none;strokeColor=#000000;exitX=1;exitY=0.5;entryX=0.5;entryY=0;" parent="1" source="eer-spec" target="eer-FundedPlan" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-eer-t21" value="Disjoint, total specialization on PlanType" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=11;fontStyle=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="25" y="805" width="300" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Account" value="Account" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="435" y="87" width="250" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-22" value="AccountID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Account" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-23" value="AccountLabel" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Account" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-24" value="Platform" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Account" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-25" value="OpenDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Account" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-26" value="CloseDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Account" vertex="1">
+          <mxGeometry y="116" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-27" value="Status" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Account" vertex="1">
+          <mxGeometry y="138" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-AccountCharge" value="AccountCharge" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="435" y="380" width="250" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-28" value="ChargeID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-AccountCharge" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-29" value="ChargeDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountCharge" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-30" value="ChargeType" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountCharge" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-31" value="Amount" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-AccountCharge" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Payout" value="Payout" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="435" y="543" width="250" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-32" value="PayoutID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Payout" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-33" value="RequestDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Payout" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-34" value="GrossAmount" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Payout" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-35" value="TraderShare" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Payout" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-36" value="Status" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Payout" vertex="1">
+          <mxGeometry y="116" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-37" value="PaidDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Payout" vertex="1">
+          <mxGeometry y="138" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-RuleViolation" value="RuleViolation" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="435" y="759" width="250" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-38" value="ViolationID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-RuleViolation" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-39" value="ViolationDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-RuleViolation" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-40" value="RuleType" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-RuleViolation" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-41" value="Details" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-RuleViolation" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-DailyBal" value="DailyAccountBalance «weak»" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="435" y="922" width="250" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-42" value="TradeDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=6;" parent="eer-DailyBal" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-43" value="StartBalance" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-DailyBal" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-44" value="EndBalance" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-DailyBal" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-45" value="HighWaterMark" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-DailyBal" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-46" value="DrawdownFloor" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-DailyBal" vertex="1">
+          <mxGeometry y="116" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Trade" value="Trade" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="858" y="87" width="250" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-47" value="TradeID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-48" value="Direction" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-49" value="Contracts" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-50" value="EntryTime" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-51" value="ExitTime" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="116" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-52" value="AvgEntryPrice" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="138" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-53" value="AvgExitPrice" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="160" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-54" value="Commission" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Trade" vertex="1">
+          <mxGeometry y="182" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Fill" value="Fill «weak»" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;strokeWidth=3;" parent="1" vertex="1">
+          <mxGeometry x="858" y="477" width="250" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-55" value="LegNo" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=6;" parent="eer-Fill" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-56" value="FillTime" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Fill" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-57" value="Side" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Fill" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-58" value="Quantity" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Fill" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-59" value="Price" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Fill" vertex="1">
+          <mxGeometry y="116" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-60" value="OrderType" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Fill" vertex="1">
+          <mxGeometry y="138" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Session" value="TradingSession" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="858" y="759" width="250" height="122" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-61" value="SessionID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Session" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-62" value="SessionName" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Session" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-63" value="StartTimeET" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Session" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-64" value="EndTimeET" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Session" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Event" value="EconomicEvent" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="858" y="922" width="250" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-65" value="EventID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Event" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-66" value="EventDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Event" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-67" value="EventTimeET" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Event" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-68" value="EventName" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Event" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-69" value="Impact" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Event" vertex="1">
+          <mxGeometry y="116" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-eer-t70" value="No stored relationship: trades are matched to sessions and to economic events by timestamp during ETL." style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=11;fontStyle=2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="858" y="1065" width="560" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Strategy" value="Strategy" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="87" width="250" height="144" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-71" value="StrategyID" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Strategy" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-72" value="StrategyName" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Strategy" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-73" value="Style" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Strategy" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-74" value="Timeframe" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Strategy" vertex="1">
+          <mxGeometry y="94" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-75" value="Description" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Strategy" vertex="1">
+          <mxGeometry y="116" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Approval" value="StrategyApproval «associative»" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="293" width="250" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-76" value="MaxContracts" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Approval" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-77" value="EnabledDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Approval" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Instrument" value="Instrument" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1280" y="456" width="250" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-78" value="Symbol" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Instrument" vertex="1">
+          <mxGeometry y="28" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-79" value="ContractMonth" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Instrument" vertex="1">
+          <mxGeometry y="50" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-80" value="ExpirationDate" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Instrument" vertex="1">
+          <mxGeometry y="72" width="250" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Product" value="Product" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1692" y="293" width="238" height="166" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-81" value="RootSymbol" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Product" vertex="1">
+          <mxGeometry y="28" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-82" value="ProductName" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Product" vertex="1">
+          <mxGeometry y="50" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-83" value="AssetClass" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Product" vertex="1">
+          <mxGeometry y="72" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-84" value="TickSize" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Product" vertex="1">
+          <mxGeometry y="94" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-85" value="TickValue" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Product" vertex="1">
+          <mxGeometry y="116" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-86" value="IsMicro" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Product" vertex="1">
+          <mxGeometry y="138" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-Exchange" value="Exchange" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=6;html=1;fillColor=#E6E6E6;swimlaneFillColor=#FFFFFF;strokeColor=#000000;fontColor=#000000;fontSize=13;" parent="1" vertex="1">
+          <mxGeometry x="1692" y="564" width="238" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-87" value="ExchangeCode" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=4;" parent="eer-Exchange" vertex="1">
+          <mxGeometry y="28" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-88" value="ExchangeName" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Exchange" vertex="1">
+          <mxGeometry y="50" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-89" value="TimeZone" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=8;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontColor=#000000;fontSize=12;fontStyle=0;" parent="eer-Exchange" vertex="1">
+          <mxGeometry y="72" width="238" height="22" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-eer-t90" value="Legend: underlined = key attribute; italic + underline = partial key of a weak entity; thick border = weak entity; | = one, O = zero (optional), crow&#39;s foot = many" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontColor=#000000;fontSize=11;fontStyle=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="45" y="1118" width="1100" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-91" value="offers" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eer-PropFirm" target="eer-AccountPlan" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-92" value="governs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=1;exitY=0.1;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" parent="1" source="eer-AccountPlan" target="eer-Account" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="327.2" />
+              <mxPoint x="345" y="120.2" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eer-93" value="earns (eval → funded)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERzeroToOne;endArrow=ERzeroToMany;exitX=1;exitY=0.8;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="eer-Account" target="eer-Account" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="715" y="205" />
+              <mxPoint x="715" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eer-94" value="billed" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0.15;exitY=1;exitDx=0;exitDy=0;entryX=0.15;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eer-Account" target="eer-AccountCharge" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-95" value="paid out" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.4;entryDx=0;entryDy=0;" parent="1" source="eer-Account" target="eer-Payout" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="415" y="203.2" />
+              <mxPoint x="415" y="609.4" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eer-96" value="breaches" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0;exitY=0.8;exitDx=0;exitDy=0;entryX=0;entryY=0.4;entryDx=0;entryDy=0;" parent="1" source="eer-Account" target="eer-RuleViolation" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="398" y="219.8" />
+              <mxPoint x="398" y="807.8" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eer-97" value="has snapshot" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERoneToMany;exitX=0;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.4;entryDx=0;entryDy=0;" parent="1" source="eer-Account" target="eer-DailyBal" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="381" y="236.4" />
+              <mxPoint x="381" y="979.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eer-98" value="places" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=1;exitY=0.15;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" parent="1" source="eer-Account" target="eer-Trade" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-99" value="executed by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERoneToMany;exitX=0.4;exitY=1;exitDx=0;exitDy=0;entryX=0.4;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eer-Trade" target="eer-Fill" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-100" value="copies (leader → copy)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERzeroToOne;endArrow=ERzeroToMany;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" parent="1" source="eer-Trade" target="eer-Trade" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1140" y="270" />
+              <mxPoint x="1140" y="315" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eer-101" value="generates" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0;exitY=0.3;exitDx=0;exitDy=0;entryX=1;entryY=0.2;entryDx=0;entryDy=0;" parent="1" source="eer-Strategy" target="eer-Trade" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-102" value="traded as" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.6;entryDx=0;entryDy=0;" parent="1" source="eer-Instrument" target="eer-Trade" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-103" value="listed as" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERoneToMany;exitX=0;exitY=0.8;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eer-Product" target="eer-Instrument" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-104" value="lists" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERoneToMany;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="eer-Exchange" target="eer-Product" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-105" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="eer-Strategy" target="eer-Approval" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-106" value="approved for" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERmandOne;endArrow=ERzeroToMany;exitX=0;exitY=0.2;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eer-Product" target="eer-Approval" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eer-107" value="micro of" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endFill=0;startFill=0;strokeColor=#000000;fontColor=#000000;fontSize=11;labelBackgroundColor=#FFFFFF;endSize=10;startSize=10;startArrow=ERzeroToOne;endArrow=ERzeroToMany;exitX=1;exitY=0.4;exitDx=0;exitDy=0;entryX=1;entryY=0.85;entryDx=0;entryDy=0;" parent="1" source="eer-Product" target="eer-Product" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1970" y="347" />
+              <mxPoint x="1970" y="418" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram></mxfile>

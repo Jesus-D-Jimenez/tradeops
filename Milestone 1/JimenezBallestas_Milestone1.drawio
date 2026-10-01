@@ -1,0 +1,406 @@
+<mxfile host="Electron" modified="2026-09-22T22:58:04.284Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.6.4 Chrome/124.0.6367.207 Electron/30.0.6 Safari/537.36" etag="yORX1c_fLB0wTtNAS2Ef" version="24.6.4" type="device">
+  <diagram id="oltp" name="Operational Schema - TradeOps">
+    <mxGraphModel dx="2074" dy="1196" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1250" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PropFirm_hdr" value="PropFirm" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="60" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="PropFirm_FirmID" value="FirmID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="90" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="PropFirm_FirmName" value="FirmName" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="114" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="PropFirm_Website" value="Website (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="138" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="PropFirm_PayoutCycleDays" value="PayoutCycleDays" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="162" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_hdr" value="AccountPlan" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="240" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_PlanID" value="PlanID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="270" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_FirmID" value="FirmID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="294" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_PlanName" value="PlanName" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="318" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_PlanType" value="PlanType" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="342" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_StartingBalance" value="StartingBalance" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="366" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_ProfitTarget" value="ProfitTarget (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="390" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_MaxTrailingDrawdown" value="MaxTrailingDrawdown" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="414" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_DailyLossLimit" value="DailyLossLimit (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="438" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_ConsistencyRulePct" value="ConsistencyRulePct (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="462" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_MinTradingDays" value="MinTradingDays (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="486" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_MaxContracts" value="MaxContracts" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="510" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_ProfitSplitPct" value="ProfitSplitPct (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="534" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountPlan_PlanFee" value="PlanFee" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="558" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountCharge_hdr" value="AccountCharge" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="660" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountCharge_ChargeID" value="ChargeID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="690" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountCharge_AccountID" value="AccountID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="714" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountCharge_ChargeDate" value="ChargeDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="738" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountCharge_ChargeType" value="ChargeType" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="762" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="AccountCharge_Amount" value="Amount" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="786" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_hdr" value="Payout" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="860" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_PayoutID" value="PayoutID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="890" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_AccountID" value="AccountID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="914" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_RequestDate" value="RequestDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="938" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_GrossAmount" value="GrossAmount" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="962" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_TraderShare" value="TraderShare" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="986" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_Status" value="Status" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1010" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Payout_PaidDate" value="PaidDate (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="40" y="1034" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_hdr" value="Account" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="240" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_AccountID" value="AccountID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="270" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_PlanID" value="PlanID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="294" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_ParentAccountID" value="ParentAccountID* (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="318" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_AccountLabel" value="AccountLabel" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="342" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_Platform" value="Platform" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="366" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_OpenDate" value="OpenDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="390" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_CloseDate" value="CloseDate (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="414" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Account_Status" value="Status" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="340" y="438" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_hdr" value="Trade" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="240" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_TradeID" value="TradeID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="270" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_AccountID" value="AccountID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="294" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_StrategyID" value="StrategyID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="318" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_Symbol" value="Symbol*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="342" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_LeaderTradeID" value="LeaderTradeID* (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="366" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_Direction" value="Direction" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="390" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_Contracts" value="Contracts" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="414" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_EntryTime" value="EntryTime" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="438" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_ExitTime" value="ExitTime (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="462" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_AvgEntryPrice" value="AvgEntryPrice" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="486" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_AvgExitPrice" value="AvgExitPrice (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="510" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Trade_Commission" value="Commission" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="534" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RuleViolation_hdr" value="RuleViolation" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="620" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RuleViolation_ViolationID" value="ViolationID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="650" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RuleViolation_AccountID" value="AccountID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="674" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RuleViolation_ViolationDate" value="ViolationDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="698" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RuleViolation_RuleType" value="RuleType" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="722" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="RuleViolation_Details" value="Details (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="746" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyAccountBalance_hdr" value="DailyAccountBalance" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="830" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyAccountBalance_AccountID" value="AccountID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="860" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyAccountBalance_TradeDate" value="TradeDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="884" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyAccountBalance_StartBalance" value="StartBalance" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="908" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyAccountBalance_EndBalance" value="EndBalance" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="932" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyAccountBalance_HighWaterMark" value="HighWaterMark" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="956" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyAccountBalance_DrawdownFloor" value="DrawdownFloor" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="640" y="980" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_hdr" value="Fill" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="240" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_TradeID" value="TradeID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="270" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_LegNo" value="LegNo" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="294" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_FillTime" value="FillTime" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="318" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_Side" value="Side" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="342" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_Quantity" value="Quantity" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="366" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_Price" value="Price" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="390" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Fill_OrderType" value="OrderType" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="414" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Strategy_hdr" value="Strategy" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="500" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Strategy_StrategyID" value="StrategyID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="530" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Strategy_StrategyName" value="StrategyName" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="554" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Strategy_Style" value="Style" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="578" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Strategy_Timeframe" value="Timeframe" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="602" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Strategy_Description" value="Description (0,1)" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="626" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Instrument_hdr" value="Instrument" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="710" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Instrument_Symbol" value="Symbol" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="740" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Instrument_RootSymbol" value="RootSymbol*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="764" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Instrument_ContractMonth" value="ContractMonth" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="788" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Instrument_ExpirationDate" value="ExpirationDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="940" y="812" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="StrategyApproval_hdr" value="StrategyApproval" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="240" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="StrategyApproval_StrategyID" value="StrategyID*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="270" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="StrategyApproval_RootSymbol" value="RootSymbol*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="294" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="StrategyApproval_MaxContracts" value="MaxContracts" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="318" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="StrategyApproval_EnabledDate" value="EnabledDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="342" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_hdr" value="Product" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="460" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_RootSymbol" value="RootSymbol" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="490" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_ProductName" value="ProductName" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="514" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_ExchangeCode" value="ExchangeCode*" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="538" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_AssetClass" value="AssetClass" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="562" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_TickSize" value="TickSize" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="586" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_TickValue" value="TickValue" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="610" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Product_IsMicro" value="IsMicro" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1240" y="634" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Exchange_hdr" value="Exchange" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="460" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Exchange_ExchangeCode" value="ExchangeCode" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="490" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Exchange_ExchangeName" value="ExchangeName" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="514" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="Exchange_TimeZone" value="TimeZone" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="538" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="TradingSession_hdr" value="TradingSession" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="660" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TradingSession_SessionID" value="SessionID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="690" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="TradingSession_SessionName" value="SessionName" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="714" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="TradingSession_StartTimeET" value="StartTimeET" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="738" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="TradingSession_EndTimeET" value="EndTimeET" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="762" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="EconomicEvent_hdr" value="EconomicEvent" style="rounded=0;whiteSpace=wrap;html=0;fontStyle=1;fillColor=#dae8fc;strokeColor=#333333;fontSize=13;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="850" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="EconomicEvent_EventID" value="EventID" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=4;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="880" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="EconomicEvent_EventDate" value="EventDate" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="904" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="EconomicEvent_EventTimeET" value="EventTimeET" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="928" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="EconomicEvent_EventName" value="EventName" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="952" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="EconomicEvent_Impact" value="Impact" style="rounded=0;whiteSpace=wrap;html=0;align=left;spacingLeft=8;fontStyle=0;fillColor=#ffffff;strokeColor=#333333;fontSize=12;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="976" width="220" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="fk0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="AccountPlan_FirmID" target="PropFirm_FirmID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Account_PlanID" target="AccountPlan_PlanID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Account_ParentAccountID" target="Account_AccountID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="AccountCharge_AccountID" target="Account_AccountID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="Payout_AccountID" target="Account_AccountID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Trade_AccountID" target="Account_AccountID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="RuleViolation_AccountID" target="Account_AccountID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="DailyAccountBalance_AccountID" target="Account_AccountID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Trade_LeaderTradeID" target="Trade_TradeID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Fill_TradeID" target="Trade_TradeID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Trade_StrategyID" target="Strategy_StrategyID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Trade_Symbol" target="Instrument_Symbol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="StrategyApproval_StrategyID" target="Strategy_StrategyID" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="StrategyApproval_RootSymbol" target="Product_RootSymbol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Instrument_RootSymbol" target="Product_RootSymbol" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fk15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=0;endArrow=block;endFill=1;strokeColor=#000000;fontColor=#000000;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Product_ExchangeCode" target="Exchange_ExchangeCode" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend" value="Notation&#xa;Underline = primary key&#xa;* = foreign key&#xa;Arrow: foreign key -&gt; referenced key&#xa;(0,1) = nullable; all others NOT NULL&#xa;TradingSession and EconomicEvent join to Trade by time (no FK)" style="rounded=0;whiteSpace=wrap;html=0;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;dashed=1;fillColor=#f9f9f9;strokeColor=#999999;fontSize=11;fontColor=#000000;" parent="1" vertex="1">
+          <mxGeometry x="1540" y="1040" width="300" height="115" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

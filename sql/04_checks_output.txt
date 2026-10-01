@@ -1,0 +1,48 @@
+SET
+== Rows loaded per table ==
+     table_name      |     kind      | row_count 
+---------------------+---------------+-----------
+ PropFirm            | Reference     |         3
+ AccountPlan         | Reference     |         8
+ Exchange            | Reference     |         4
+ Product             | Reference     |        12
+ Instrument          | Reference     |       164
+ Strategy            | Reference     |         5
+ StrategyApproval    | Reference     |        24
+ TradingSession      | Reference     |         5
+ EconomicEvent       | Reference     |       245
+ Account             | Transactional |       134
+ AccountCharge       | Transactional |       220
+ Trade               | Transactional |      6322
+ Fill                | Transactional |     13944
+ DailyAccountBalance | Transactional |      2916
+ RuleViolation       | Transactional |       143
+ Payout              | Transactional |        63
+(16 rows)
+
+== Constraints and indexes in schema tradeops ==
+  constraint_type  | n  
+-------------------+----
+ Foreign key       | 17
+ Check             | 30
+ Unique            |  7
+ Primary key       | 16
+ Index (secondary) | 15
+(5 rows)
+
+== Integrity checks (expected 0) ==
+                                 check_name                                  | result 
+-----------------------------------------------------------------------------+--------
+ Trades whose fills do not net to a flat position                            |      0
+ Copied trades in a different direction or contract family than their leader |      0
+ Funded accounts whose parent account is not an evaluation                   |      0
+ Trades on a product the strategy is not approved for                        |      0
+ Micro products without a full-size parent                                   |      0
+(5 rows)
+
+== Trade coverage ==
+ first_trade_date | last_trade_date | trading_days | contract_months_traded | leader_trades | copied_trades 
+------------------+-----------------+--------------+------------------------+---------------+---------------
+ 2025-01-03       | 2026-08-31      |          420 |                    107 |          1014 |          5308
+(1 row)
+
