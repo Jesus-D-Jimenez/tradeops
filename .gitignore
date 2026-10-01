@@ -12,3 +12,6 @@ tradeops_data_csv.zip
 
 # Office temp files
 ~$*
+
+# draw.io backup files
+*.bkp
