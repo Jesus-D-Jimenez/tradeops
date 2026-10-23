@@ -1,0 +1,70 @@
+SET
+== Row counts per warehouse table
+       table_name       | row_count 
+------------------------+-----------
+ dim_date               |       730
+ dim_time               |      1440
+ dim_account            |       134
+ dim_instrument         |       164
+ dim_strategy           |         5
+ dim_trade_role         |         2
+ dim_cash_flow_type     |         6
+ dim_account_status     |         5
+ fact_trade             |      6322
+ fact_daily_balance     |      2916
+ fact_cash_flow         |       283
+ fact_account_lifecycle |       134
+
+== Fact rows vs. source rows
+ trade_diff | balance_diff | cash_flow_diff | lifecycle_diff 
+------------+--------------+----------------+----------------
+          0 |            0 |              0 |              0
+
+== Measure totals vs. source totals
+ dw_net_pnl | src_net_pnl | dw_fees  | src_fees | dw_payouts | src_payouts | dw_violations | src_violations 
+------------+-------------+----------+----------+------------+-------------+---------------+----------------
+   15381.50 |    15381.50 | 17497.60 | 17497.60 |   58950.00 |    58950.00 |           143 |            143
+
+== Cross-fact consistency: lifecycle net return = cash-flow total
+ lifecycle_net_return | cash_flow_net_return 
+----------------------+----------------------
+             41452.40 |             41452.40
+
+== Trades by session (every trade maps to a session)
+ session_name | trades 
+--------------+--------
+ NY Open      |   3117
+ London       |   1794
+ NY Midday    |   1411
+
+== ETL load log (initial full load and high-water marks)
+       table_name       | load_type | high_water_mark | rows_inserted | rows_updated 
+------------------------+-----------+-----------------+---------------+--------------
+ dim_date               | Full      | 20261231        |           730 |            0
+ dim_time               | Full      |                 |          1440 |            0
+ dim_account            | Full      | 1134            |           134 |            0
+ dim_instrument         | Full      |                 |           164 |            0
+ dim_strategy           | Full      | 5               |             5 |            0
+ fact_trade             | Full      | 6322            |          6322 |            0
+ fact_daily_balance     | Full      | 20260831        |          2916 |            0
+ fact_cash_flow         | Full      | 20260831        |           283 |            0
+ fact_account_lifecycle | Full      |                 |           134 |            0
+
+== Integrity constraints declared in tradeops_dw, by table
+       table_name       | primary_keys | foreign_keys | unique_keys | check_constraints 
+------------------------+--------------+--------------+-------------+-------------------
+ dim_account            |            1 |            0 |           1 |                 3
+ dim_account_status     |            1 |            0 |           1 |                 0
+ dim_cash_flow_type     |            1 |            0 |           1 |                 1
+ dim_date               |            1 |            0 |           1 |                 2
+ dim_instrument         |            1 |            0 |           1 |                 2
+ dim_strategy           |            1 |            0 |           1 |                 1
+ dim_time               |            1 |            0 |           0 |                 1
+ dim_trade_role         |            1 |            0 |           1 |                 0
+ etl_load_log           |            1 |            0 |           0 |                 2
+ fact_account_lifecycle |            1 |            5 |           0 |                 4
+ fact_cash_flow         |            1 |            3 |           0 |                 1
+ fact_daily_balance     |            1 |            2 |           0 |                 3
+ fact_trade             |            1 |            6 |           0 |                 6
+                        |           13 |           16 |           7 |                26
+

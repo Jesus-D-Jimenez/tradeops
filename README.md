@@ -34,12 +34,39 @@ Synthetic and seeded (the same data on every run), covering Jan 2025 to Aug 2026
 | `sql/03_views.sql` | Creates `v_trade_pnl` (P&L in ticks and dollars, net of commission, holding time) |
 | `sql/04_checks.sql` | Row counts, constraint inventory, and integrity checks |
 | `sql/04_checks_output.txt` | Output of `04_checks.sql` |
+| `sql/05_dw_schema.sql` | Milestone 3: drops and recreates schema `tradeops_dw` (8 dimensions, 4 facts, `etl_load_log`; 16 FKs, 26 CHECK constraints, 8 indexes) |
+| `sql/06_dw_load.sql` | Milestone 3: initial full load from `tradeops` into `tradeops_dw` in one transaction; logs high-water marks in `etl_load_log` |
+| `sql/07_olap_queries.sql` | Milestone 3: nine OLAP operations (roll-up, drill-down, slice, dice, pivot, drill-across, cube, rank) |
+| `sql/07_olap_output.txt`, `sql/08_dw_checks_output.txt` | Query results and warehouse reconciliation output |
+| `sql/08_dw_checks.sql` | Milestone 3: reconciles every fact with its source; lists the load log and constraints per table |
+| `TradeOps_DW_Diagrams.drawio` | Editable MultiDim conceptual model and ROLAP schema pages |
+| `TradeOps_MultiDim.png`, `TradeOps_ROLAP.png` | Exported warehouse diagrams |
 | `TradeOps_Diagrams.drawio` | Editable diagrams: EER Diagram and Relational Model pages |
 | `TradeOps_EER.png`, `TradeOps_Relational.png` | Exported diagrams |
 | `generate_data.py` | Generates the CSVs in `data/` (and a DuckDB copy, `tradeops.duckdb`) |
 | `data/` | One CSV per table |
 | `schema.sql`, `add_foreign_keys_mysql.sql`, `load_mysql.py` | Milestone 1 DuckDB / MySQL versions |
-| `Milestone 1/`, `Milestone 2/` | Submitted reports |
+| `Milestone 1/`, `Milestone 2/`, `Milestone 3, M6/` | Submitted reports (Milestone 3 folder also holds its screenshots and diagram views) |
+
+## Data warehouse (Milestone 3)
+
+Schema `tradeops_dw` is a fact constellation of star schemas:
+
+| Fact | Grain | Dimensions |
+|---|---|---|
+| `fact_trade` | One row per closed trade | Date, Time of day, Account, Instrument, Strategy, Trade role |
+| `fact_daily_balance` | One row per account per trading day | Date, Account |
+| `fact_cash_flow` | One row per fee charge or payout request | Date, Account, Cash-flow type |
+| `fact_account_lifecycle` | One row per account (accumulating snapshot) | Date (Open, Pass, Close roles), Account, Account status |
+
+`dim_account` and `dim_strategy` are SCD Type 2 (`valid_from`, `valid_to`, `is_current`), and `etl_load_log` records each load's high-water mark for incremental refreshes.
+
+Build it after the operational schema:
+
+```bash
+psql -d tradeops -f sql/05_dw_schema.sql -f sql/06_dw_load.sql
+psql -d tradeops -f sql/07_olap_queries.sql -f sql/08_dw_checks.sql
+```
 
 ## Quick start (PostgreSQL)
 
